@@ -1,90 +1,210 @@
-# Welcome to GitHub
+# Neumorphism <!-- omit in toc -->
 
-Welcome to GitHub—where millions of developers work together on software. Ready to get started? Let’s learn how this all works by building and publishing your first GitHub Pages website!
+> Neumorphism designed Jekyll theme for personal websites, portfolios and resumes.
 
-## Repositories
+* Featured on [JAMstack Themes](https://jamstackthemes.dev/theme/jekyll-neumorphism/)
+* Featured on [Jekyll Themes](https://jekyll-themes.com/neumorphism/)
+* Featured on [jekyllthemes](http://jekyllthemes.org/themes/neumorphism/)
 
-Right now, we’re in your first GitHub **repository**. A repository is like a folder or storage space for your project. Your project's repository contains all its files such as code, documentation, images, and more. It also tracks every change that you—or your collaborators—make to each file, so you can always go back to previous versions of your project if you make any mistakes.
+[![Open Issues](https://badgen.net/github/open-issues/longpdo/neumorphism)](https://github.com/longpdo/neumorphism/issues)
+[![License](https://badgen.net/github/license/longpdo/neumorphism)](LICENSE)
+<a href="https://jekyll-themes.com">
+    <img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
+</a>
 
-This repository contains three important files: The HTML code for your first website on GitHub, the CSS stylesheet that decorates your website with colors and fonts, and the **README** file. It also contains an image folder, with one image file.
+[View Demo](https://longpdo.github.io/neumorphism/) · [Report Bug](https://github.com/longpdo/neumorphism/issues) · [Request Feature](https://github.com/longpdo/neumorphism/issues)
 
-## Describe your project
+<!-- TABLE OF CONTENTS -->
+## Table of Contents <!-- omit in toc -->
 
-You are currently viewing your project's **README** file. **_README_** files are like cover pages or elevator pitches for your project. They are written in plain text or [Markdown language](https://guides.github.com/features/mastering-markdown/), and usually include a paragraph describing the project, directions on how to use it, who authored it, and more.
+* [About The Project](#about-the-project)
+  * [Built With](#built-with)
+  * [Features](#features)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+  * [Personalize and Customize](#personalize-and-customize)
+    * [_config.yml](#_configyml)
+    * [Github Metadata Plugin](#github-metadata-plugin)
+    * [_data/*.yml](#_datayml)
+    * [Particles.js](#particlesjs)
+* [Contributing](#contributing)
+* [License](#license)
+* [Acknowledgements](#acknowledgements)
 
-[Learn more about READMEs](https://help.github.com/en/articles/about-readmes)
+<!-- ABOUT THE PROJECT -->
 
-## Your first website
+## About The Project
 
-**GitHub Pages** is a free and easy way to create a website using the code that lives in your GitHub repositories. You can use GitHub Pages to build a portfolio of your work, create a personal website, or share a fun project that you coded with the world. GitHub Pages is automatically enabled in this repository, but when you create new repositories in the future, the steps to launch a GitHub Pages website will be slightly different.
+[![Project Screenshot][product-screenshot]](https://longpdo.github.io/neumorphism/)
 
-[Learn more about GitHub Pages](https://pages.github.com/)
+This is a personal website built with `Jekyll` and hosted on `Github Pages`, which is based on the new `Neumorphism` design trend and was developed with a mobile-first approach. This can be used by developers, who want to showcase their resume and portfolio. If you want to use this for your own website, fork this repository and then refer to [personalize and customize](#personalize-and-customize).
 
-## Rename this repository to publish your site
+### Built With
 
-We've already set-up a GitHub Pages website for you, based on your personal username. This repository is called `hello-world`, but you'll rename it to: `username.github.io`, to match your website's URL address. If the first part of the repository doesn’t exactly match your username, it won’t work, so make sure to get it right.
+* [Jekyll](https://jekyllrb.com/)
 
-Let's get started! To update this repository’s name, click the `Settings` tab on this page. This will take you to your repository’s settings page. 
+### Features
 
-![repo-settings-image](https://user-images.githubusercontent.com/18093541/63130482-99e6ad80-bf88-11e9-99a1-d3cf1660b47e.png)
+* Mobile-First Responsive Design
+* Animated preloader animation
+* Landing Page with animated background with [particles.js](https://vincentgarreau.com/particles.js/), a Typing Carousel and animated social icons
+* Dark Neumorphism Design on main content
+* [Animations On Scroll](https://michalsnik.github.io/aos/)
+* Filterable *Skills* word cloud
+* [Github's API](https://developer.github.com/v3/) automatically populating the *Open Source Projects* section
+* Gulp dev workflow with [BrowserSync](https://browsersync.io/), [Autoprefixer](https://autoprefixer.github.io/) and `JS` & `SCSS` minifying.
+* [Google Analytics](https://analytics.google.com/)
 
-Under the **Repository Name** heading, type: `username.github.io`, where username is your username on GitHub. Then click **Rename**—and that’s it. When you’re done, click your repository name or browser’s back button to return to this page.
+<!-- GETTING STARTED -->
 
-<img width="1039" alt="rename_screenshot" src="https://user-images.githubusercontent.com/18093541/63129466-956cc580-bf85-11e9-92d8-b028dd483fa5.png">
+## Getting Started
 
-Once you click **Rename**, your website will automatically be published at: https://your-username.github.io/. The HTML file—called `index.html`—is rendered as the home page and you'll be making changes to this file in the next step.
+To get a local copy up and running follow these simple steps.
 
-Congratulations! You just launched your first GitHub Pages website. It's now live to share with the entire world
+`The commands and instructions I provide are for MacOS - please look up the specific commands for your OS on your own.`
 
-## Making your first edit
+### Prerequisites
 
-When you make any change to any file in your project, you’re making a **commit**. If you fix a typo, update a filename, or edit your code, you can add it to GitHub as a commit. Your commits represent your project’s entire history—and they’re all saved in your project’s repository.
+* [NodeJS](https://nodejs.org/en/)
 
-With each commit, you have the opportunity to write a **commit message**, a short, meaningful comment describing the change you’re making to a file. So you always know exactly what changed, no matter when you return to a commit.
-
-## Practice: Customize your first GitHub website by writing HTML code
-
-Want to edit the site you just published? Let’s practice commits by introducing yourself in your `index.html` file. Don’t worry about getting it right the first time—you can always build on your introduction later.
-
-Let’s start with this template:
-
+```sh
+brew install node
 ```
-<p>Hello World! I’m [username]. This is my website!</p>
+
+If you need to switch between Node versions regurlarly, I would recommend to install Node via [Node Version Manager](https://github.com/nvm-sh/nvm/blob/master/README.md#manual-install).
+
+* [Jekyll](https://jekyllrb.com/)
+
+```sh
+gem install bundler jekyll
 ```
 
-To add your introduction, copy our template and click the edit pencil icon at the top right hand corner of the `index.html` file.
+For more information, refer to [this](https://jekyllrb.com/docs/installation/).
 
-<img width="997" alt="edit-this-file" src="https://user-images.githubusercontent.com/18093541/63131820-0794d880-bf8d-11e9-8b3d-c096355e9389.png">
+* [Yarn](https://yarnpkg.com/)
 
-
-Delete this placeholder line:
-
-```
-<p>Welcome to your first GitHub Pages website!</p>
+```sh
+npm install -g yarn
 ```
 
-Then, paste the template to line 15 and fill in the blanks.
+### Installation
 
-<img width="1032" alt="edit-githuboctocat-index" src="https://user-images.githubusercontent.com/18093541/63132339-c3a2d300-bf8e-11e9-8222-59c2702f6c42.png">
+> Recommended way: If you want to contribute to this theme or open issues due to problems implementing this on your own, I would recommend forking the repository directly. This makes it easier for me to solve open issues and questions or check pull requests.
 
+1.1: Fork the repository (using the `Fork` button at the top) and then clone the repository
 
-When you’re done, scroll down to the `Commit changes` section near the bottom of the edit page. Add a short message explaining your change, like "Add my introduction", then click `Commit changes`.
+```sh
+# Replace {YOUR_USERNAME} with your actual username
+git clone https://github.com/{YOUR_USERNAME}/neumorphism.git
+```
 
+or
 
-<img width="1030" alt="add-my-username" src="https://user-images.githubusercontent.com/18093541/63131801-efbd5480-bf8c-11e9-9806-89273f027d16.png">
+1.2: Create your own repository (using the green `Use this template` button at the top) and then clone the repository
 
-Once you click `Commit changes`, your changes will automatically be published on your GitHub Pages website. Refresh the page to see your new changes live in action.
+```sh
+# Replace {YOUR_USERNAME}, {YOUR_REPOSITORY} with the actual values
+git clone https://github.com/{YOUR_USERNAME}/{YOUR_REPOSITORY}.git
+```
 
-:tada: You just made your first commit! :tada:
+2: Change directory into neumorphism
 
-## Extra Credit: Keep on building!
+```sh
+cd neumorphism
+```
 
-Change the placeholder Octocat gif on your GitHub Pages website by [creating your own personal Octocat emoji](https://myoctocat.com/build-your-octocat/) or [choose a different Octocat gif from our logo library here](https://octodex.github.com/). Add that image to line 12 of your `index.html` file, in place of the `<img src=` link.
+3: Install dependencies
 
-Want to add even more code and fun styles to your GitHub Pages website? [Follow these instructions](https://github.com/github/personal-website) to build a fully-fledged static website.
+```sh
+yarn
+bundle install
+```
 
-![octocat](./images/create-octocat.png)
+<!-- USAGE EXAMPLES -->
 
-## Everything you need to know about GitHub
+## Usage
 
-Getting started is the hardest part. If there’s anything you’d like to know as you get started with GitHub, try searching [GitHub Help](https://help.github.com). Our documentation has tutorials on everything from changing your repository settings to configuring GitHub from your command line.
+* Run and develop locally with live server at `http://localhost:4000`, this will also build production-ready `JS` and `SCSS` assets with every change
+
+```sh
+gulp
+```
+
+* After committing and pushing, see the `Settings` page of your repository to see where your site is published at via `Github Pages`.
+
+### Personalize and Customize
+
+#### _config.yml
+
+Edit `_config.yml` to personalize your site. For documentation, refer to [docs/config.md](https://github.com/longpdo/neumorphism/blob/master/docs/config.md).
+
+#### Github Metadata Plugin
+
+If you want to automatically have your Github repositories pulled for the *Open Source Projects* section, then you also need to authenticate yourself for the Github Metadata plugin to work.
+
+You need to generate a new personal access token on GitHub:
+
+* Go to the [Github Token site](https://github.com/settings/tokens/new)
+* Select the scope `public_repository`, and add a description.
+* Confirm and save the settings. Copy the token you see on the page.
+* Create a `.env` file inside your repository and add your generated `JEKYLL_GITHUB_TOKEN`:
+
+```text
+JEKYLL_GITHUB_TOKEN=0YOUR0GENERATED0TOKEN0
+```
+
+To complete the configuration for the Github Metadata plugin, you also need to change the value of `repository` inside `_config.yml`. After this, you should the Github Metadata plugin should work properly.
+
+For optimal results, you should make sure, that every Github project, you want included on this portfolio, has added following informations on Github:
+
+* Description
+* Homepage link, if there is a live version of it
+* Topics
+
+Example:
+![Github Repository Information Example][github-repo-info]
+
+#### _data/*.yml
+
+Edit files inside `_data` to add information to the portfolio. For documentation, refer to [docs/data.md](https://github.com/longpdo/neumorphism/blob/master/docs/data.md).
+
+#### Particles.js
+
+Edit `assets/particles.json` to customize the landing page backgorund animation. For more information, refer to [this](https://github.com/VincentGarreau/particles.js/#options).
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## Acknowledgements
+
+* [Font Awesome](https://fontawesome.com/)
+* [Normalize.css](https://necolas.github.io/normalize.css/)
+* Based Preloader on [Codrin Pavel's](https://codepen.io/zerospree/pen/aCjAz) version
+* Typing Carousel by [Gregory Schier](https://codepen.io/gschier/pen/jkivt)
+* Social Button Animation by [Stéphane Lyver](https://codepen.io/wouwi/pen/Lwrmi)
+* Adapted [Damian Jankowski's](https://codepen.io/dolaron/pen/rNadmOE) color palette for the neumorphism design
+* Based Timeline on [Krishna Babu's](https://codepen.io/krishnab/pen/OPwqbW) version
+
+<!-- MARKDOWN LINKS & IMAGES -->
+
+[product-screenshot]: https://raw.githubusercontent.com/longpdo/neumorphism/master/docs/screenshot.gif
+[github-repo-info]: https://raw.githubusercontent.com/longpdo/neumorphism/master/docs/github-repo-info.png
