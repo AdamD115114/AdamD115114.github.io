@@ -4,13 +4,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://adamsdevsite.com" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
-# github_username:  AdamD114113
+
 
 # Build settings
-# theme: neumorphism
 remote_theme: longpdo/neumorphism
 
 plugins:
@@ -51,8 +48,6 @@ kramdown:
 ### VALUES YOU SHOULD CHANGE ###
 
 # GENERAL SITE SETTINGS
-# title: This will be displayed as the website's name in your browser tab.
-# title: Neumorphism
 # description: This will be meta HTML tag content. This can be ignored.
 description: A Personal Resume Website
 # baseurl: The subpath of your site
@@ -72,8 +67,8 @@ typing_text: Software Developer & Researcher
 # > twitter_username:
 github_username: AdamD115114
 codepen_username:
-dev_username: exampleUser
-linkedin_username: in/adamjdoherty
+dev_username:
+linkedin_username: adamjdoherty
 twitter_username:
 
 # ABOUT ME SECTION
@@ -103,7 +98,7 @@ show_timeline_card: true
 timeline_title: Education & Experience
 # cv_download_link: The link where you host your cv.
 # > e.g. you share your cv on your dropbox, then add the dropbox link here
-cv_download_link: https://example.com/
+cv_download_link: https://github.com/AdamD115114/Adam-Doherty_CurriculumVitae_-Latex/blob/main/main.pdf
 
 # PROJECTS SECTION
 # show_projects_card:
@@ -160,7 +155,7 @@ projects:
 # Set the id, if you want to track your website with Google Analytics
 # > set this to "", if you do not want to track with Google Analytics
 google-analytics:
-  id: ""
+  id: "G-80REMT9FG1"
 
 ### END OF VALUES YOU SHOULD CHANGE ###
 
