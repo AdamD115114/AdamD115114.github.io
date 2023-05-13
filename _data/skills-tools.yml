@@ -6,31 +6,31 @@
 #   weight: 5
 
 - name: Git
-  weight: 5
+  weight: 9
 
 - name: Bash
-  weight: 3
+  weight: 6
 
 - name: Scrum
-  weight: 3
+  weight: 5
 
-- name: Travis CI
+- name: Github Actions
   weight: 1
 
-- name: Jenkins
-  weight: 1
+- name: Docker
+  weight: 7
 
-- name: Chrome DevTools
-  weight: 2
+- name: Composer
+  weight: 8
 
 - name: npm
-  weight: 2
+  weight: 6
 
-- name: gulp
-  weight: 4
+# - name: gulp
+#   weight: 4
 
-- name: VS Code
-  weight: 3
+# - name: VS Code
+#   weight: 3
 
 - name: Postman
-  weight: 4
+  weight: 5
