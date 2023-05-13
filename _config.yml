@@ -10,7 +10,9 @@ url: "https://adamsdevsite.com" # the base hostname & protocol for your site, e.
 # github_username:  AdamD114113
 
 # Build settings
-theme: neumorphism
+# theme: neumorphism
+remote_theme: digitalcraftsman/neumorphism-jekyll-theme
+
 plugins:
   - jekyll-feed
   - "jekyll-github-metadata"
