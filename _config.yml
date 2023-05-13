@@ -11,10 +11,10 @@ url: "https://adamsdevsite.com" # the base hostname & protocol for your site, e.
 
 # Build settings
 # theme: neumorphism
-remote_theme: digitalcraftsman/neumorphism-jekyll-theme
+remote_theme: longpdo/neumorphism
 
 plugins:
-  - jekyll-feed
+  - "jekyll-feed"
   - "jekyll-github-metadata"
 
 # Exclude from processing.
