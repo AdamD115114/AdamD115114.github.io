@@ -4,7 +4,6 @@
 # Example of a Language
 # - name: Language
 #   weight: 5
-
 - name: TypeScript
   weight: 5
 
@@ -12,19 +11,10 @@
   weight: 7
 
 - name: PHP
-weight: 7
+  weight: 7
 
 - name: Python
   weight: 2
-
-# - name: HTML5
-#   weight: 4
-
-# - name: CSS3
-#   weight: 3
-
-# - name: SASS
-#   weight: 3
 
 - name: Java
   weight: 7
@@ -37,12 +27,6 @@ weight: 7
 
 - name: Swift
   weight: 2
-
-# - name: Kotlin
-#   weight: 1
-
-# - name: C++
-#   weight: 2
 
 - name: Ruby
   weight: 4
