@@ -1,0 +1,19 @@
+{
+  "name": "adamsdevsite",
+  "version": "0.0.1",
+  "description": "A personal website with Resume and project descriptions",
+  "main": "index.js",
+  "authors": {
+    "name": "Adam J Doherty",
+    "email": "adamdoherty1995@gmail.com"
+  },
+  "repository": "https://github.com/AdamD115114/AdamD115114.github.io/adamsdevsite",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
